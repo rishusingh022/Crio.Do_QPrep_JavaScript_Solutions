@@ -1,0 +1,17 @@
+//https://www.tutorialsteacher.com/nodejs/nodejs-module-exports
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+//https://www.samanthaming.com/tidbits/87-5-ways-to-append-item-to-array/
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
+//https://medium.com/if-else/the-difference-between-java-and-javascript-arrays-73b865476654
+function evenNumbers(n) {
+    var ans = [];
+    var i;
+    for(i=0;i<=n;i++){
+        if(i%2==0){
+            ans.push(i);
+        }
+    }
+    return ans;
+}
+module.exports = evenNumbers;
+console.log(evenNumbers());

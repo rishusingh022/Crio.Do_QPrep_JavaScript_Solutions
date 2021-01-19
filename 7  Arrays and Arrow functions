@@ -1,0 +1,30 @@
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+let modify = (array) => {
+
+    for ( let i = 0 ;  i < array.length ; i++){
+
+        let isprim = true;
+
+        for (let j = 2; j < array[i] ; j++ ){
+            if (array[i] % j == 0){
+                array[i] = array[i] *2;
+                isprim = false;
+                break
+            }
+
+        }
+        if(isprim){
+            if (array[i] == 0){
+                array[i] = 0
+            }else{
+                array[i] = array[i] + 1; 
+            }
+
+
+        }
+
+    }
+    return array;
+}
+module.exports = modify;
+console.log(modify([]));
